@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificador de nível de Herói</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kristi&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="icon" type="image/x-icon" href="./src/images/guerreiro.png">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="form">
+            <div class="title">
+                <h1>Bem-vindo Herói</h1>
+                <h2>Digite seu nome e a quantidade de experiência (XP) <br>para descobrir seu nível</h2>
+            </div>
+
+            <form id="info" onsubmit="verificar(event)">
+                <input type="text" id="nameHero" placeholder="Digite o seu nome">
+                <input type="number" id="qntXp" placeholder="Digite a quantidade de experiência">
+                <button type="submit">Enviar</button>
+            </form>
+
+            <audio id="bgMusic" src="./src/audios/guildsong.mp3" loop></audio>
+            <button id="toggleMusic">⏸ Pausar música</button>
+
+        </div>
+
+    </div>
+    
+    <script defer src="./src/scripts/Script.js"></script>
+</body>
+</html>
