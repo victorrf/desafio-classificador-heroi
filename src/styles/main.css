@@ -56,6 +56,18 @@
     margin-bottom: 10px;
 }
 
+#info button {
+    cursor: pointer;
+}
+
+#toggleMusic {
+    width: 100%;
+    max-width: 200px; 
+    font-size: 24px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
 @media (max-width: 1560px) {
     .title h2 {
         margin-bottom: 120px;
